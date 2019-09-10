@@ -1,0 +1,3 @@
+#! /usr/bin/bash
+
+echo PKG_CONFIG_PATH = $PKG_CONFIG_PATH

@@ -1,0 +1,32 @@
+{
+ "profile": "[settings]\narch=x86_64\narch_build=x86_64\nbuild_type=Release\ncompiler=gcc\ncompiler.libcxx=libstdc++\ncompiler.version=8\nos=Linux\nos_build=Linux\n[options]\n[build_requires]\n[env]\n",
+ "graph_lock": {
+  "nodes": {
+   "5c30dad2-d3dd-11e9-822e-645d86dec98e": {
+    "pref": "ffmpeg/1.0@_/_#783f7f88bbfc8d25885d96ac17403503:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a#ab75978c9787d3757fa5e55c6b8fda72",
+    "options": "shared=False"
+   },
+   "5c30dad4-d3dd-11e9-822e-645d86dec98e": {
+    "pref": "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412:7c51eb95141cdbf81897fab316c80a26dd65eeb2#d110b73843a367e5f9299978316bab95",
+    "options": "shared=False\nfontconfig:shared=False",
+    "requires": {
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "5c30dad3-d3dd-11e9-822e-645d86dec98e"
+    }
+   },
+   "5c30dad5-d3dd-11e9-822e-645d86dec98e": {
+    "pref": "nano/1.0@_/_#8fb5b05bea1257b215c7cbfb8664f49b:b494d30f4dbf65ff204fb97dbeaca048043a417c",
+    "options": "ffmpeg:shared=False\nfontconfig:shared=False\nharfbuzz:shared=False",
+    "requires": {
+     "ffmpeg/1.0@_/_#783f7f88bbfc8d25885d96ac17403503": "5c30dad2-d3dd-11e9-822e-645d86dec98e",
+     "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955": "5c30dad3-d3dd-11e9-822e-645d86dec98e",
+     "harfbuzz/1.0@_/_#bfd268132eb937dc5ebd9f3e42e4b412": "5c30dad4-d3dd-11e9-822e-645d86dec98e"
+    }
+   },
+   "5c30dad3-d3dd-11e9-822e-645d86dec98e": {
+    "pref": "fontconfig/1.0@_/_#c6e28a260353cd84d81f34f60b18e955:2d5685a99e2ff5a0d2b054bb1fbfa46781f8a46a#d443648f32c5738dade94018195f56c9",
+    "options": "shared=False"
+   }
+  }
+ },
+ "version": "0.1"
+}
